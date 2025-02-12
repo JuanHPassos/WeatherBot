@@ -8,7 +8,7 @@ async function processWeather(city) {
   }
 
   const forecast = data.timelines.daily[0].values;
-  return `Weather in ${city}: Minimum temperature of ${forecast.temperatureMin}°C, maximum temperature of ${forecast.temperatureMax}°C and chance of rain of ${forecast.precipitationProbability}`;
+  return `Weather in ${city}: temperature is ${forecast.temperatureAvg}, minimum temperature of ${forecast.temperatureMin}°C, maximum temperature of ${forecast.temperatureMax}°C`;
 }
 
 module.exports = processWeather;
