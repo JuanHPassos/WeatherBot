@@ -30,7 +30,12 @@ async function processWeather(city, day = 'today') {
     }
   }
 
-  return `Weather in ${city} on ${day}: temperature is ${selectedForecast.temperatureAvg}°C, minimum temperature of ${selectedForecast.temperatureMin}°C, maximum temperature of ${selectedForecast.temperatureMax}°C`;
+  return `Weather in ${city} on ${day}:\n
+  Temperature: ${selectedForecast.temperatureAvg}°C
+  Min/Max: ${selectedForecast.temperatureMin}°C / ${selectedForecast.temperatureMax}°C
+  Temperature apparent: ${selectedForecast.temperatureApparentAvg}°C
+  Humidity: ${selectedForecast.humidityAvg}%
+  Wind speed: ${selectedForecast.windSpeedAvg}m/s`;
 }
 
 module.exports = processWeather;
