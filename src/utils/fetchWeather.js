@@ -1,4 +1,4 @@
-const { api_key } = require('./config.json');
+const { api_key } = require('../../config.json');
 
 function getWeather(city) {
   const encodedCity = encodeURIComponent(city);

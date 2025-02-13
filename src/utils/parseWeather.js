@@ -1,4 +1,4 @@
-const getWeather = require('./weather');
+const getWeather = require('./fetchWeather.js');
 
 async function processWeather(city, day = 'today') {
   const data = await getWeather(city);

@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const processWeather = require('../../weatherProcessor.js');
+const processWeather = require('../../utils/parseWeather.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
