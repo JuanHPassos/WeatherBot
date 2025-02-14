@@ -2,6 +2,8 @@ const { SlashCommandBuilder } = require('discord.js');
 const processWeather = require('../../utils/parseWeather.js');
 
 module.exports = {
+    // how long the user would have to wait (in seconds)
+	cooldown: 5,
     data: new SlashCommandBuilder()
         .setName('weather')
         .setDescription('Sends temperature and probability of rain according to the given city!')
